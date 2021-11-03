@@ -1,0 +1,19 @@
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+
+html {
+    font-size: 62.25%;
+}
+
+body {
+    background-color: var(--Gris-claro);
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--Gris-oscuro);
+}
