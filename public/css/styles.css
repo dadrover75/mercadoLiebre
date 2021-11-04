@@ -7,20 +7,27 @@
     --Verde: #39b54a;
 }
 
+
+/* * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+
 html {
     font-size: 62.25%;
 }
 
 body {
-    background-color: var(--Amarillo);
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
-    color: var(--Gris-oscuro);
+    background-color: var(--Gris-claro);
+    margin: 0rem;
 }
 
-footer {
-    background-color: white;
-    padding: 5rem;
+header {
+    background-color: var(--Amarillo);
+    padding-bottom: none;
 }
 
 .logo {
@@ -29,6 +36,11 @@ footer {
     margin: 1rem auto;
     padding: 1rem;
     justify-content: left;
+}
+
+a {
+    text-decoration: none;
+    color: black
 }
 
 .burguer-menu {
@@ -46,8 +58,9 @@ footer {
     margin: 0.5rem;
 }
 
-.banner {
+.box-banner {
     width: 100%;
+    margin-bottom: 0;
 }
 
 section {
@@ -56,6 +69,7 @@ section {
 
 h3 {
     font-size: 2.4rem;
+    margin: 0.5rem;
     text-align: center;
 }
 
@@ -72,15 +86,40 @@ h5 {
 }
 
 article {
+    margin: 3rem;
+    background-color: white;
     font-size: 1.6rem;
+    padding: 1rem;
 }
 
-p.precio {
+.precio {
     font-size: 1.8rem;
 }
 
-footer i {
+.camion {
     font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    color: var(--Verde);
+}
+
+
+/* article i {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: var(--Verde);
+} */
+
+footer {
+    background-color: white;
+    padding: 5rem;
+}
+
+footer i {
+    font-size: 3.2rem;
     color: blue;
     margin-bottom: 1rem;
+    margin-top: 5rem;
 }
