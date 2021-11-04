@@ -7,13 +7,6 @@
     --Verde: #39b54a;
 }
 
-
-/* * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-} */
-
 html {
     font-size: 62.25%;
 }
@@ -28,6 +21,7 @@ body {
 header {
     background-color: var(--Amarillo);
     padding-bottom: none;
+    margin: 0;
 }
 
 .logo {
@@ -36,6 +30,10 @@ header {
     margin: 1rem auto;
     padding: 1rem;
     justify-content: left;
+}
+
+.buscador {
+    margin-left: 1rem;
 }
 
 a {
@@ -47,7 +45,6 @@ a {
     font-size: 2rem;
     text-align: center;
     padding: 1rem;
-    margin: 1rem;
     color: white;
 }
 
@@ -59,12 +56,19 @@ a {
 }
 
 .box-banner {
-    width: 100%;
     margin-bottom: 0;
+}
+
+.banner {
+    width: 100%;
 }
 
 section {
     text-align: center;
+}
+
+p {
+    margin: 0;
 }
 
 h3 {
@@ -74,7 +78,7 @@ h3 {
 }
 
 h5 {
-    font-size: 1.2rem;
+    font-size: 12px;
     text-align: center;
     font-weight: bold;
 }
@@ -89,11 +93,19 @@ article {
     margin: 3rem;
     background-color: white;
     font-size: 1.6rem;
-    padding: 1rem;
+    font-weight: bold;
+    padding: 3rem;
 }
 
 .precio {
     font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.oferta {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--Verde)
 }
 
 .camion {
@@ -102,15 +114,6 @@ article {
     padding: 1rem;
     color: var(--Verde);
 }
-
-
-/* article i {
-    font-size: 2rem;
-    text-align: center;
-    padding: 1rem;
-    margin: 1rem;
-    color: var(--Verde);
-} */
 
 footer {
     background-color: white;
