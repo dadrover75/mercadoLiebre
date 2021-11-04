@@ -12,8 +12,75 @@ html {
 }
 
 body {
-    background-color: var(--Gris-claro);
+    background-color: var(--Amarillo);
     font-family: 'Roboto', sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     color: var(--Gris-oscuro);
+}
+
+footer {
+    background-color: white;
+    padding: 5rem;
+}
+
+.logo {
+    width: 50%;
+    height: auto;
+    margin: 1rem auto;
+    padding: 1rem;
+    justify-content: left;
+}
+
+.burguer-menu {
+    font-size: 2rem;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+}
+
+.burguer-menu i {
+    background-color: var(--Celeste);
+    padding: 1rem;
+    border-radius: 0.6rem;
+    margin: 0.5rem;
+}
+
+.banner {
+    width: 100%;
+}
+
+section {
+    text-align: center;
+}
+
+h3 {
+    font-size: 2.4rem;
+    text-align: center;
+}
+
+h5 {
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.imagen-producto {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+article {
+    font-size: 1.6rem;
+}
+
+p.precio {
+    font-size: 1.8rem;
+}
+
+footer i {
+    font-size: 2rem;
+    color: blue;
+    margin-bottom: 1rem;
 }
