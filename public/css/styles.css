@@ -11,6 +11,10 @@ html {
     font-size: 62.25%;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
@@ -35,32 +39,30 @@ header {
 }
 
 h5 {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: 400;
     text-align: center;
 }
 
-nav {
+.main-header-botton {
     display: none;
 }
 
-a {
+.main-header-botton a {
     text-decoration: none;
     color: black
 }
 
-.burguer-menu {
+.hamburguer-buton {
+    background-color: var(--Azul);
+    display: block;
+    width: 5rem;
+    margin: auto;
     font-size: 2rem;
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem 0;
     color: white;
-}
-
-.burguer-menu i {
-    background-color: var(--Celeste);
-    padding: 1rem;
-    border-radius: 0.6rem;
-    margin: 0.5rem;
+    border-radius: 10%;
 }
 
 .banner {
@@ -138,10 +140,10 @@ footer i {
     .descripcion {
         display: block;
     }
-    .burguer-menu {
+    .hamburguer-buton {
         display: none;
     }
-    nav {
+    .main-header-botton {
         display: block;
     }
     article {
