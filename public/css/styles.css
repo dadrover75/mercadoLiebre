@@ -23,6 +23,9 @@ body {
     background-color: var(--Gris-claro);
 }
 
+
+/*-------------------------------------------------------*/
+
 header {
     background-color: var(--Amarillo);
     padding: 2rem;
@@ -74,9 +77,15 @@ h5 {
     border-radius: 10%;
 }
 
+
+/*-------------------------------------------------------*/
+
 .banner {
     width: 100%;
 }
+
+
+/*-------------------------------------------------------*/
 
 main {
     width: 90%;
@@ -153,6 +162,9 @@ img {
     color: var(--Gris-oscuro);
 }
 
+
+/*-------------------------------------------------------*/
+
 footer {
     background-color: white;
     padding: 5rem;
@@ -164,6 +176,9 @@ footer i {
     margin-bottom: 1rem;
     margin-top: 5rem;
 }
+
+
+/*-------------------------------------------------------*/
 
 @media (min-width: 769px) {
     .descripcion {
