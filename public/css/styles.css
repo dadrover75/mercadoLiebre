@@ -12,6 +12,8 @@ html {
 }
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -26,22 +28,29 @@ header {
     padding: 2rem;
 }
 
+.main-header-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 .logo {
     width: 50%;
     height: auto;
-    margin: 1rem auto;
-    padding: 1rem;
     justify-content: left;
 }
 
 .buscador {
-    margin-left: 1rem;
+    width: 50%;
+    text-align: right;
 }
 
 h5 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 400;
     text-align: center;
+    padding: 1rem 0;
 }
 
 .main-header-botton {
@@ -54,10 +63,10 @@ h5 {
 }
 
 .hamburguer-buton {
-    background-color: var(--Azul);
+    background-color: var(--Celeste);
     display: block;
     width: 5rem;
-    margin: auto;
+    margin: 2rem auto 0 auto;
     font-size: 2rem;
     text-align: center;
     padding: 1.5rem 0;
@@ -80,13 +89,19 @@ section {
 
 h3 {
     font-size: 2.4rem;
+    padding: 1rem;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 article {
     margin: 1rem 0;
     background-color: white;
     font-size: 1.6rem;
-    font-weight: bold;
 }
 
 img {
@@ -97,31 +112,43 @@ img {
 
 .descripcion-articulo {
     border-top: 1px solid #ebebeb;
-    padding: 2rem;
-    text-align: left;
+}
+
+article i {
+    display: block;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 120px;
+    top: -15px;
+}
+
+.precio-oferta {
+    display: flex;
 }
 
 .precio {
-    font-size: 1.8rem;
-    font-weight: 300;
+    width: 30%;
+    font-size: 1.6rem;
     margin: 0;
 }
 
 .oferta {
-    font-size: 1.8rem;
-    font-weight: 300;
+    font-size: 1.6rem;
     color: var(--Verde);
     margin: 0;
 }
 
 .descripcion {
     display: none;
-}
-
-.camion {
-    font-size: 2rem;
-    padding: 1rem;
-    color: var(--Verde);
+    text-align: left;
+    padding: 2rem;
+    color: var(--Gris-oscuro);
 }
 
 footer {
@@ -154,5 +181,33 @@ footer i {
 @media (min-width: 769px) {
     .logo {
         width: 30%;
+    }
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 3rem;
+    }
+    .main-header-botton {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    ul {
+        display: flex;
+        list-style: none;
+    }
+    ul li {
+        margin: 0 0.5rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .logo {
+        width: 30%;
+    }
+    main section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-gap: 3rem;
     }
 }
