@@ -112,9 +112,10 @@ img {
 
 .descripcion-articulo {
     border-top: 1px solid #ebebeb;
+    position: relative;
 }
 
-article i {
+.descripcion-articulo i {
     display: block;
     padding: 5px;
     width: 30px;
@@ -123,13 +124,14 @@ article i {
     border: 1px solid #39b54a;
     background-color: #FFF;
     border-radius: 50%;
-    position: relative;
-    left: 120px;
+    position: absolute;
+    right: 20px;
     top: -15px;
 }
 
 .precio-oferta {
     display: flex;
+    margin: 2rem 0;
 }
 
 .precio {
@@ -163,7 +165,7 @@ footer i {
     margin-top: 5rem;
 }
 
-@media (min-width: 361px) {
+@media (min-width: 769px) {
     .descripcion {
         display: block;
     }
@@ -176,9 +178,6 @@ footer i {
     article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
-}
-
-@media (min-width: 769px) {
     .logo {
         width: 30%;
     }
