@@ -111,3 +111,31 @@ body {
         margin: 0;
     }
 }
+
+.create-form {
+    padding: 20px 15px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+.control {
+    width: 100%;
+    pdding: 8px;
+}
+
+.form-button {
+    background-color: var(--Verde);
+    border: none !important;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
