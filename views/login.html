@@ -19,10 +19,10 @@
         <div class='main-header'>
             <div class='main-header-top'>
                 <a href='/' class='logo'><img src=".\images\logo-mercado-liebre.svg" alt="imagen logo"></a>
-                <div class="buscador">
+                <form class="buscador">
                     <input type="search" name="busqueda" placeholder="Buscar productos, marcas y mas">
-                    <input type="submit" value="Buscar">
-                </div>
+                    <button type="submit" value="Buscar">Buscar</button>
+                </form>
                 <h5><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</h5>
 
             </div>
@@ -68,15 +68,15 @@
     </div>
 
     <main>
-        <form action="/create-form" method='post'>
-            <div>
+        <form action="/create-form" method='post' class='form-login'>
+            <div class="form-control">
                 <label>Nombre de Usuario</label>
-                <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario" required>
+                <input type="text" name="nombreUsuario" placeholder="Nombre de Usuario" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="form-control">
                 <label>Contraseña</label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
             <button type="submit" class="btnSend">Enviar</button>

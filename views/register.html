@@ -19,10 +19,10 @@
         <div class='main-header'>
             <div class='main-header-top'>
                 <a href='/' class='logo'><img src=".\images\logo-mercado-liebre.svg" alt="imagen logo"></a>
-                <div class="buscador">
+                <form class="buscador">
                     <input type="search" name="busqueda" placeholder="Buscar productos, marcas y mas">
-                    <input type="submit" value="Buscar">
-                </div>
+                    <button type="submit" value="Buscar">Buscar</button>
+                </form>
                 <h5><i class="fas fa-hand-holding-usd"></i> Compra en cuotas y sin tarjeta de crédito</h5>
 
             </div>
@@ -68,34 +68,35 @@
     </div>
 
     <main>
-        <form action="/create-form" method='post'>
-            <div>
-                <label>Nombre y Apellido</label>
-                <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
+        <form action="/create-form" method='post' class='form-registro'>
+            <div class="form-control">
+                <label class="info">Nombre y Apellido</label>
+                <input type="text" name="nombre" placeholder="Nombre y Apellido" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
-                <label>Nombre de Usuario</label>
-                <input type="text" name="nombreUsuario" placeholder="Nombre de Usuari" required>
+            <div class="form-control">
+                <label class="info">Nombre de Usuario</label>
+                <input type="text" name="nombreUsuario" placeholder="Nombre de Usuari" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="form-control">
                 <label>Fecha Nacimiento</label>
-                <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento" required>
+                <input type="date" name="fechaNacimiento" placeholder="Fecha Nacimiento" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
-                <label>Domicilio</label>
-                <input type=" text" name="domicilio" placeholder="Domicilio" required>
+            <div class="form-control">
+                <label class="info">Domicilio</label>
+                <input type=" text" name="domicilio" placeholder="Domicilio" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="form-control">
                 <label>Perfil de Usuario</label>
-                <label>comprar<input type="radio" name="perfil"></label>
-                <label>vender<input type="radio" name="perfil"></label>
-
+                <div class="opcionPerfil">
+                    <label>comprar<input type="radio" name="perfil"></label>
+                    <label>vender<input type="radio" name="perfil"></label>
+                </div>
             </div>
-            <div>
+            <div class="form-control">
                 <label>Categorias de Interes</label>
                 <label><input type="checkbox" name="interes">Electro</label>
                 <label><input type="checkbox" name="interes">Moda</label>
@@ -104,23 +105,25 @@
                 <label><input type="checkbox" name="interes">Vida Sana</label>
 
             </div>
-            <div>
+            <div class="form-control">
                 <label>Seleccionar Foto de Perfil</label>
-                <input type="file" name="fotoPerfil" accept=".jpg, .png, .webp" required>
+                <input type="file" name="fotoPerfil" accept=".jpg, .png, .webp" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="form-control">
                 <label>Contraseña</label>
-                <input type="password" name="password" required>
+                <input type="password" name="password" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <div>
+            <div class="form-control">
                 <label>Confirmar Contraseña</label>
-                <input type="password" name="confirmPassword" required>
+                <input type="password" name="confirmPassword" required class="control">
                 <span class="feedback" id="feedback"></span>
             </div>
-            <button type="submit" class="btnSend">Enviar</button>
-            <button type="reset" class="btnErase">Borrar</button>
+            <div class="buttons">
+                <button type="submit" class="btnSend">Enviar</button>
+                <button type="reset" class="btnErase">Borrar</button>
+            </div>
         </form>
     </main>
 

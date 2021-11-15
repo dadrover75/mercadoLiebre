@@ -162,6 +162,56 @@ img {
     color: var(--Gris-oscuro);
 }
 
+.form-registro,
+.form-login {
+    padding: 20px 15px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    margin-bottom: 5px;
+    font-style: italic;
+    display: block;
+}
+
+label.info {
+    display: none;
+}
+
+.opcionPerfil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.control {
+    width: 100%;
+    padding: 8px;
+    border: none;
+}
+
+.btnSend,
+.btnErase {
+    background-color: var(--Azul);
+    border: none;
+    font-size: 20px;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 3rem;
+}
+
 
 /*-------------------------------------------------------*/
 
