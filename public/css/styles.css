@@ -189,6 +189,7 @@ label.info {
 
 .control {
     width: 100%;
+    max-width: 60em;
     padding: 8px;
     border: none;
 }
@@ -203,10 +204,12 @@ label.info {
     border-radius: 5px;
     display: block;
     width: 100%;
+    max-width: 60em;
 }
 
 .buttons {
     display: flex;
+    max-width: 60em;
     justify-content: space-around;
     align-items: center;
     column-gap: 3rem;
