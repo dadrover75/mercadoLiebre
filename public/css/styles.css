@@ -111,6 +111,7 @@ article {
     margin: 1rem 0;
     background-color: white;
     font-size: 1.6rem;
+    transition: all .3s ease-in-out;
 }
 
 img {
@@ -136,7 +137,7 @@ img {
     position: absolute;
     right: 20px;
     top: -15px;
-    transition: all 1s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .precio-oferta {
@@ -161,6 +162,7 @@ img {
     text-align: left;
     padding: 2rem;
     color: var(--Gris-oscuro);
+    transition: all .3s ease-in-out;
 }
 
 article:hover .descripcion { 
@@ -220,6 +222,11 @@ label.info {
     max-width: 60em;
 }
 
+.btnSend:hover,
+.btnErase:hover {
+    background-color: #0022AA;
+}
+
 .buttons {
     display: flex;
     max-width: 60em;
@@ -236,11 +243,21 @@ footer {
     padding: 5rem;
 }
 
-footer i {
+.footer-items i {
     font-size: 3.2rem;
-    color: blue;
+    color: var(--Celeste);
     margin-bottom: 1rem;
     margin-top: 5rem;
+    transition: all .3s ease-in-out;
+}
+
+.footer-items:hover i {
+    font-size: 4rem;
+    color: white;
+    background-color: var(--Celeste);
+    padding: 2rem;
+    border-radius: 50%;
+    
 }
 
 
@@ -281,7 +298,7 @@ footer i {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1024px) {
     .logo {
         width: 30%;
     }
@@ -289,5 +306,11 @@ footer i {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-column-gap: 3rem;
+    }
+    .footer {
+        padding: 5rem 10rem;
+        display: flex;
+        justify-content: space-evenly;
+        column-gap: 3rem;
     }
 }
